@@ -10,9 +10,14 @@ namespace _1460650_.Controllers
 {
     public class SanPhamController : Controller
     {
-        
+
         // GET: SanPham
-        
+        public ActionResult Index(int page = 1)
+        {
+            var dsSanPham = SanPhamBus.DanhSach(page, 4);
+            return View(dsSanPham);
+        }
+
 
 
         // GET: SanPham/Details/5
