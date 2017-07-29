@@ -335,6 +335,7 @@
     <Content Include="Views\Shared\_ProductTypeMenu.cshtml" />
     <Content Include="Views\Shared\_NhaSanXuatMenu.cshtml" />
     <Content Include="Views\NhaSanXuat\Index.cshtml" />
+    <Content Include="Views\LoaiSanPham\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -348,7 +349,6 @@
     <Folder Include="img\" />
     <Folder Include="js\" />
     <Folder Include="themes\" />
-    <Folder Include="Views\LoaiSanPham\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
