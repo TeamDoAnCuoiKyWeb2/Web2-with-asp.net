@@ -13,15 +13,13 @@ using System.IO;
 namespace _1460650_.Areas.Admin.Controllers
 {
 
+    [Authorize(Roles = "Admin")]
     public class QuanLySanPhamController : Controller
     {
-
-
-
         // GET: Admin/QuanLySanPham
         public ActionResult Index()
         {
-            var dsSanPham = SanPhamBus.DanhSach();
+            var dsSanPham = QuanLyBus.DanhSach();
             return View(dsSanPham);
 
         }

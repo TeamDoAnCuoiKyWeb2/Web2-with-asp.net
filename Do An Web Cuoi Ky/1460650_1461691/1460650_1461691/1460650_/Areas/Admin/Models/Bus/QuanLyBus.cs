@@ -33,7 +33,6 @@ namespace _1460650_.Areas.Admin.Models
         {
 
             var db = new PetaPoco.Database("DienThoaiShopConnection");
-            //db.Delete<sanpham>("where MaSanPham=@0", id);
             sp = ChiTietSanPham(id);
             sp.BiXoa = 1;
             db.Update("sanpham", "MaSanPham", sp);
@@ -43,14 +42,6 @@ namespace _1460650_.Areas.Admin.Models
 
 
         }
-        //public static void CapNhat(string id, sanpham sp)
-        //{
-        //    var db = new DienThoaiShopConnectionDB();
-
-        //    //db.Update<sanpham>("Set MaSanPham= @0, TenSanPham=@1, hinhanh=@2, Gia=@3, MaLoai=@4, NhaSX=@5, SoLuongTon=@6, MoTa=@7 where BiXoa=0", sp.MaSanPham, sp.TenSanPham, sp.hinhanh, sp.Gia, sp.MaLoai, sp.NhaSX, sp.MoTa, id);
-        //    sp = ChiTietSanPham(sp);
-        //    db.Update("sanpham", "MaSanPham", sp);
-        //}
         public static void CapNhat(string id, sanpham sp)
         {
             var db = new DienThoaiShopConnectionDB();
